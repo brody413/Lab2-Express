@@ -20,10 +20,4 @@ const PersonSchema = new mongoose.Schema({
     timestamps: true
   });
   
-  PersonSchema.methods.getPeople = async function () {
-    return await mongoose.model('People').find({
-      person: this._id
-    });
-  }
-  
   module.exports = mongoose.model('Person', PersonSchema);

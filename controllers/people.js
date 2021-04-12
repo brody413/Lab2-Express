@@ -20,7 +20,7 @@ exports.index = async (request, response, next) => {
   
       response.status(200)
       .json({
-        message: "Person was created successfully",
+        message: "Person was created",
         status: "SUCCESS",
         person
       });
